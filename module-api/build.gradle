@@ -1,0 +1,13 @@
+
+bootJar.enabled = true
+jar.enabled = false
+
+dependencies {
+}
+
+bootJar {
+    launchScript()
+    manifest {
+        attributes 'Start-Class': 'com.inwook.project.api.ModuleApiApplication'
+    }
+}
