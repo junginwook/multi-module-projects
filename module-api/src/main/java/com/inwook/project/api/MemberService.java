@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class MemberService {
-	//수정입니다1
+	//수정입니다2
 	private final MemberRepository memberRepository;
 
 	public Long signup (Member member) {
