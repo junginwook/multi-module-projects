@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.3.12.RELEASE'
+        springBootVersion = '3.0.3'
         lombokVersion = '1.18.24'
     }
 
@@ -32,8 +32,8 @@ subprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 
     //소스 컴파일시 사용
     repositories {
@@ -51,13 +51,6 @@ project(':module-api-service') {
         implementation project(path: ':module-common', configuration: 'default')
     }
 }
-
-project(':module-web') {
-    dependencies {
-        implementation project(path: ':module-common', configuration: 'default')
-    }
-}
-////////////////
 project(':module-common') {
     dependencies {
     }

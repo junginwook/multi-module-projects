@@ -1,6 +1,5 @@
 rootProject.name = 'multi-module-projects'
 include 'module-api-service'
 include 'module-common'
-include 'module-web'
 
 
